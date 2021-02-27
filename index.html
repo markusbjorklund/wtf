@@ -8,12 +8,19 @@
       background-size: 200px;
     }
   </style>
+  <script>
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+      document.getElementById('player').play();
+      document.removeEventListener('click', musicPlay);
+    }
+  </script>
+
 </head>
 
 <body>
-  <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
   <audio id="player" autoplay loop>
-    <source src="audio/markus-says.mp3" type="audio/mp3">
+    <source src="audio/markus-says.mp3" type="audio/mpeg">
   </audio>
 </body>
 
