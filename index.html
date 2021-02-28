@@ -9,13 +9,12 @@
     }
   </style>
   <script>
-    document.addEventListener('click', musicPlay);
-    function musicPlay() {
+    document.addEventListener('click', markusSays);
+    function markusSays() {
       document.getElementById('player').play();
-      document.removeEventListener('click', musicPlay);
+      document.removeEventListener('click', markusSays);
     }
   </script>
-
 </head>
 
 <body>
